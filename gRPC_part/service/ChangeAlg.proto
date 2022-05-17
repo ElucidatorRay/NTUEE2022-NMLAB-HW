@@ -1,0 +1,13 @@
+syntax = "proto3";
+
+service ChangeAlg {
+    rpc GetServerResponse(Request) returns (Response);
+}
+
+message Request {
+    int64 AlgNo = 1;
+}
+
+message Response {
+    int64 AlgNo = 1;
+}
